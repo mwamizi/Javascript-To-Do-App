@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(53, 126, 236);
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 37pt;
+  padding: 20px 0px;
+}
+
+.form {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  display: block;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.363);
+  transform: translate(-50%, -50%);
+}
+
+input[type="text"] {
+  margin: 0px;
+  padding: 15px 10px;
+  font-size: 15px;
+  width: 350px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+}
+input[type="submit"] {
+  padding: 15px;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+input[type="submit"]:hover {
+  transition: all 300ms;
+  background-color: rgb(211, 211, 211);
+}
+
+.todoList {
+  position: absolute;
+  left: 50%;
+  top: 28%;
+  list-style: none;
+  transform: translate(-50%);
+  width: 390px;
+}
+
+.todoList li {
+  background-color: #fff;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.363);
+  margin-bottom: 5px;
+  padding: 10px;
+  display: flex;
+  color: #444343;
+  justify-content: space-between;
+}
+
+.todoList li .trashBtn {
+  transition: all 300ms;
+  padding-left: 10px;
+}
+
+.todoList li .trashBtn:hover {
+  color: rgba(255, 0, 0, 0.904);
+  transition: all 300ms;
+  cursor: pointer;
+}
+
+.check {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.checkbt {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+
+.checkBtn {
+  margin-right: 10px;
+  font-size: 16pt;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  width: 18pt;
+  height: 18pt;
+  text-shadow: 0px 0px 10px #00000034;
+}
+
+.checkBtnColor {
+  color: green;
+}
